@@ -1,0 +1,197 @@
+.contact-section .container {
+    display: flex;
+    justify-content: space-around;
+    padding: $default-padding;
+}
+
+.questions {
+    max-width: 50%;
+    padding: $questions-padding;
+}
+
+.questions-title {
+    font-size: $banner-title-size;
+    font-family: Raleway;
+    color: $black;
+    margin: $questions-margin;
+}
+
+.questions-text {
+    font-size: $default-text-size;
+    font-weight: lighter;
+    font-family: $sans;
+    color: $black;
+    margin-bottom: $margin-bottom;
+}
+.contact-box {
+    display: flex;
+    align-items: center;
+}
+
+.contact-box p {
+    margin-right: $small-margin;
+    font-size: $default-text-size;
+    font-family: $sans;
+    font-weight: lighter;
+    color: $grey;
+}
+
+.contact-box a {
+    margin-right: $small-margin;
+}
+
+.contact-form {
+    max-width: 50%;
+    margin-top: $big-margin;
+}
+
+.contact-form input  {
+    width: 65%;
+}
+
+form {
+    margin: $form-margin;
+    display: flex;
+    flex-direction: column;
+}
+form p {
+    margin: $tiny-form-margin;
+}
+input {
+    border: 2px solid transparent;
+    border-color: transparent transparent $grey transparent;
+}
+
+.form-name, .form-email {
+    color: $main-color;
+    font-size: $default-text-size;
+    font-family: Open Sans;
+    letter-spacing: $small-letter-spacing;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.agreement {
+    display: flex;
+    margin: $agreement-margin;
+    color: $grey;
+    font-size: $nav-font;
+    font-family: Open Sans;
+    max-width: 60%;
+    margin-top: $banner-padding;
+}
+
+form button[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 5px 10px 14px $main-shadow;
+    border-radius: 35px;
+    background-color: $main-color;
+    color: $white;
+    padding: $button-padding;
+    margin-top: $nav-margin;
+    margin-left: $nav-margin;
+    font-size: $default-text-size;
+    font-family: Open Sans;
+}
+
+.checkbox label input {
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    border: 2px solid black;
+    margin-top: $banner-padding;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox input:checked + span {
+    background: transparent url('../assets/Checkmark.svg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid $grey;
+    margin-top: $banner-padding;
+    border-radius: 4px;
+  }
+  
+  .checkbox:hover input ~ .custom {
+    border: 1px solid $main-color;
+  }
+
+  @media(max-width: 900px) {
+      .contact-section .container{
+          flex-direction: column;
+      }
+      .questions{
+          padding: $agreement-margin;
+      }
+      .questions-text {
+          margin: $questions-text-margin;
+      }
+      .contact-box {
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+      .email {
+          position: absolute;
+      }
+      .contact-icon  {
+          position: relative;
+          left: -80%;
+          padding-bottom: $banner-padding;
+      }
+      .phone {
+          position: relative;
+          top: -50px;
+          left: -40%;
+      }
+      .contact-form {
+          margin: 0 auto;
+          max-width: 70%;
+          margin-left: 25%;
+      }
+      form button[type=submit] {
+          justify-content: flex-end;
+          margin-left: 35%;
+      }
+  }
+
+  @media(max-width: 500px) {
+    .questions-text {
+        margin: 1.87rem 0.25rem;
+    }
+    .contact-icon {
+        left: -70%;
+    }
+    .contact-box p {
+        margin-left: 50px;
+    }
+    .contact-box .phone {
+        margin-left: 146px;
+        margin-top: 10px;
+        width: 20vw;
+    }
+    .agreement {
+        margin: 0 3.5rem;
+    }
+  }
+  

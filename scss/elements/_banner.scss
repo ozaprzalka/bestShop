@@ -1,0 +1,53 @@
+.banner {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    font-family: $raleway;
+    font-size: $banner-title-size;
+    color: $black;
+    padding: $banner-padding;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.banner-text {
+    font-family: $sans;
+    font-size: $default-text-size;
+    color: $black;
+}
+
+.banner-button {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 40px;
+    background-color: $main-color;
+    box-shadow: 5px 10px 14px $main-shadow;
+    justify-content: center;
+    display: flex;
+}
+
+.banner-button a {
+    text-decoration: none;
+    font-size: $default-text-size;
+    color: $white;
+    font-family: $sans;
+}
+
+.banner-image {
+    height: 450px;
+    width: 100%;
+    background-image: url('../../assets/Background.png');
+    background-size: cover;
+    background-position: top;
+}
+
+@media(max-width: 500px) {
+    #menu:checked ~ .banner {
+        margin-top: 130px;
+    }
+}

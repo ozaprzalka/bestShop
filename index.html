@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Shop</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,13 +13,15 @@
             <div class="container">         
               <a href="/" class="page-logo">BestShop</a>
               <nav class="page-nav">
+                <input id="menu" type="checkbox">
+                <label for="menu"></label>  
                 <ul class="page-nav-list">
                   <li><a href="#">WHY US</a></li>
                   <li><a href="#">BENEFITS</a></li>
                   <li><a href="#">PRICES</a></li>
                   <li><a href="#">CONTACT</a></li>
                 </ul>
-              </nav>          
+              </nav>       
             </div>
         </header>
 
@@ -111,61 +112,46 @@
           <div class="pricing-section">
                 <div class="container" class="pricing">
                     <article class="offer-1">
-                        <h4 class="plan" class="plan-1">Basic</h4>
-                        <p class="price">$0</p>
+                        <div class="num">
+                            <h4 class="plan" class="plan-1">Basic</h4>
+                            <p class="price">$0</p>
+                        </div>
                         <div class="details">
-                            <ul class="check">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
                             <ul class="plan-list">
-                                <li><a href="#">100 MB HDD</a></li>
-                                <li><a href="#">1 Subdomain</a></li>
-                                <li><a href="#">2 E-mails</a></li>
-                                <li><a href="#">Two years license</a></li>
-                                <li><a href="#">Full support</a></li>
+                                <li class="included"><a href="#">100 MB HDD</a></li>
+                                <li class="included"><a href="#">1 Subdomain</a></li>
+                                <li class="included"><a href="#">2 E-mails</a></li>
+                                <li class="not-included"><a href="#">Two years license</a></li>
+                                <li class="not-included"><a href="#">Full support</a></li>
                             </ul>
                         </div>
-                        <!-- <ul class="check">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                        <ul class="plan-list">
-                            <li><a href="#">100 MB HDD</a></li>
-                            <li><a href="#">1 Subdomain</a></li>
-                            <li><a href="#">2 E-mails</a></li>
-                            <li><a href="#">Two years license</a></li>
-                            <li><a href="#">Full support</a></li>
-                        </ul> -->
                         <a href="/begin">Begin</a>
                     </article>
                     <article class="offer-2">
-                        <h4 class="plan">Proffesional</h4>
-                        <p class="price">$25</p>
+                        <div class="num">
+                            <h4 class="plan">Professional</h4>
+                            <p class="price">$25</p>
+                        </div>
                         <ul class="plan-list">
-                            <li><a href="#">500 MB HDD</a></li>
-                            <li><a href="#">2 Subdomains</a></li>
-                            <li><a href="#">5 E-mails</a></li>
-                            <li><a href="#">One year license</a></li>
-                            <li><a href="#">Full support</a></li>
+                            <li class="included"><a href="#">500 MB HDD</a></li>
+                            <li class="included"><a href="#">2 Subdomains</a></li>
+                            <li class="included"><a href="#">5 E-mails</a></li>
+                            <li class="included"><a href="#">One year license</a></li>
+                            <li class="not-included"><a href="#">Full support</a></li>
                         </ul>
                         <a href="/begin">Begin</a>
                     </article>
                     <article class="offer-3">
-                        <h4 class="plan" class="plan-3">Premium</h4>
-                        <p class="price">$60</p>
+                        <div class="num">
+                            <h4 class="plan" class="plan-3">Premium</h4>
+                            <p class="price">$60</p>
+                        </div>
                         <ul class="plan-list">
-                            <li><a href="#">2 GB HDD</a></li>
-                            <li><a href="#">5 Subdomains</a></li>
-                            <li><a href="#">20 E-mails</a></li>
-                            <li><a href="#">Two years license</a></li>
-                            <li><a href="#">Full support</a></li>
+                            <li class="included"><a href="#">2 GB HDD</a></li>
+                            <li class="included"><a href="#">5 Subdomains</a></li>
+                            <li class="included"><a href="#">20 E-mails</a></li>
+                            <li class="included"><a href="#">Two years license</a></li>
+                            <li class="included"><a href="#">Full support</a></li>
                         </ul>
                         <a href="/begin">Begin</a>
                     </article>

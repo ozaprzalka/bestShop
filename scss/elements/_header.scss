@@ -1,0 +1,131 @@
+.page-header {
+    border: 1px solid $main-shadow;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+.page-header .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-logo {
+    text-decoration: none;
+    color: $main-color;
+    text-align: left;
+    font-size: $logo-font;
+    font-family: $raleway;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.page-nav-list {
+    display: flex;
+    align-items: flex-end;
+}
+
+.page-nav-list li {
+    height: 100%;
+    border: 2px solid transparent;
+    list-style-type: none;
+}
+
+.page-nav-list a {
+    padding: $nav-padding;
+    text-decoration: none;
+    font-size: $nav-font;
+    font-family: Open Sans;
+    color: $grey;
+    display: flex;
+    letter-spacing: $nav-spacing;
+    margin: $nav-margin;
+}
+
+.page-nav-list li:hover {
+    border-color: transparent transparent $main-color transparent;
+}
+
+.page-nav-list a:hover {
+    color: $black;
+}
+
+#menu {
+    visibility: hidden;
+}
+
+@media(max-width: 500px) {
+    .page-nav-list a {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+}
+.page-nav-list {
+    margin-top: 12px;
+}
+
+@media(max-width: 1000px) {
+    .page-nav-list {
+        display: none;
+        max-height: 60px;
+        position: absolute;
+    }
+    .page-nav-list li {
+        max-height: 100px;
+        position: relative;
+        top: 20px;
+        right: -40%;
+    }
+    .page-nav-list a {
+        font-weight: 600;
+        margin: 0;
+    }
+    nav label,
+    nav label::before,
+    nav label::after {
+        position: absolute;
+        width: 60px;
+        height: 4px;
+        border-radius: 5px;
+        background: $main-color;  
+        transition: 0.6s;
+        -webkit-transition: 0.6s; 
+    }
+    label  {
+        cursor: pointer;
+        top: 4.5%;
+        right: 0;
+    }
+    label::before {
+        content: "";
+        transform: translateY(-15px);
+    }
+    label::after {
+        content: "";
+        transform: translateY(15px);
+    }
+    #menu:checked + label {
+        width: 0px;
+    }
+    #menu:checked + label::before {
+        transform: rotate(45deg) translate(0px);
+        right: 0;
+    }
+    #menu:checked + label::after {
+        transform: rotate(-45deg) translate(0px);
+        right: 0;
+    }
+
+    #menu:checked ~ .page-nav-list{
+        display: block;
+    }
+}
+
+@media(max-width: 500px) {
+    .page-nav-list li {
+        right: -15%;
+    }
+}

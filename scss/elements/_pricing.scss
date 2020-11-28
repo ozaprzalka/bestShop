@@ -1,0 +1,155 @@
+.pricing-title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: Raleway;
+    color: $black;
+    margin-bottom: 40px;
+    margin-top: $nav-margin;
+}
+.pricing-section .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.offer-1, .offer-3 {
+    max-width: 33%;
+    padding: 10px 50px;
+    border: 2px solid $red;
+    border-radius: 18px;
+    position: relative;
+
+}
+
+.offer-3 {
+    border-color: $green;
+}
+
+.offer-2 {
+    max-width: 33%;
+    padding: 40px 70px;
+    border: 2px solid $main-color;
+    box-shadow: 5px 10px 27px $main-shadow;
+    border-radius: 18px;
+    position: relative;
+}
+
+.plan {
+    padding: 10px;
+    font-size: 20px;
+    font-family: Raleway;
+    color: $black;
+    display: flex;
+    justify-content: center;
+}
+
+.plan-2 {
+    box-shadow: 5px 10px 27px $main-shadow;
+}
+
+.price {
+    font-size: 46px;
+    font-family: Open Sans;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.offer-1 .price {
+    color: $red;
+}
+
+.offer-2 .price {
+    color: $main-color;
+}
+
+.offer-3 .price {
+    color: $green;
+}
+
+.plan-list .included {
+    margin: 30px 0;
+    list-style-image: url('../../assets/Checkmark-1.svg');
+}
+
+.plan-list .not-included {
+    list-style-image: url('../assets/Close.svg');
+}
+
+.offer-1 .plan-list .not-included {
+    margin-bottom: 25px;
+}
+
+.plan-list li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Open Sans;
+    color: $black;
+    padding: 15px;
+}
+
+.offer-1 a[href="/begin"], .offer-3 a[href="/begin"] {
+    position: absolute;
+    bottom: -25px;
+    left: 60px;
+    padding: 15px 40px;
+    border-radius: 23px;
+    background-color: $red;
+    text-decoration: none;
+    color: $white;
+}
+
+.offer-3 a[href="/begin"] {
+    background-color: $green;
+}
+
+.offer-2 a[href="/begin"] {
+    position: absolute;
+    bottom: -25px;
+    left: 75px;
+    padding: 15px 40px;
+    border-radius: 23px;
+    background-color: $main-color;
+    text-decoration: none;
+    color: $white;
+}
+
+
+@media(max-width: 900px) {
+    .pricing-section .container {
+        flex-direction: column;
+    }
+    .pricing-title {
+        margin-top: 275px;
+    }
+    .offer-1,
+    .offer-2,
+    .offer-3 {
+        max-width: 100vw;
+        height: 33vh;
+        padding: $pricing-small-padding;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: $numbers-top-margin;
+    }
+    .offer-2 {
+        height: 40vh;
+        padding: $pricing-padding;
+    }
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .num {
+        margin-left: -$pricing-left-margin;
+    }
+}
+
+@media(max-width: 500px) {
+    .num {
+        margin-left: -6rem;
+    }
+}
