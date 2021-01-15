@@ -7,7 +7,6 @@
     --grey: #A5A5A5;
     --light-grey: #F7F7F7;
     --white: #FFFFFF;
-
 }
 
 * {
@@ -19,7 +18,6 @@ body {
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    width: 100vw;
 }
 
 .container {
@@ -30,7 +28,6 @@ body {
 }
 
 .page-header {
-    /* border: 1px solid var(--main-shadow); */
     box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -50,7 +47,6 @@ body {
 }
 
 .page-nav {
-    /* height: 100%; */
     display: flex;
     justify-content: center;
 }
@@ -319,7 +315,6 @@ body {
     margin: 0 auto;
     display: flex;
     margin-top: 40px;
-    /* background-color: var(--green); */
 }
 
 .benefit-photo-img {
@@ -388,7 +383,6 @@ body {
     border: 2px solid var(--red);
     border-radius: 18px;
     position: relative;
-
 }
 
 .offer-3 {
@@ -425,6 +419,14 @@ body {
     padding: 20px;
 }
 
+.limited {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Raleway;
+    display: flex;
+    justify-content: center;
+}
+
 .offer-1 .price {
     color: var(--red);
 }
@@ -447,6 +449,25 @@ body {
     font-family: Open Sans;
     color: var(--black);
     padding: 15px;
+    position: relative;
+}
+
+.supported::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Checkmark-1.svg");
+}
+
+.not-supported::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Close.svg");
 }
 
 .offer-1 a[href="/begin"], .offer-3 a[href="/begin"] {
@@ -474,26 +495,6 @@ body {
     text-decoration: none;
     color: var(--white);
 }
-
-/* .details {
-    display: flex;
-    flex-direction: row;
-}
-
-.check {
-    padding: 15px;
-    margin: 5px;
-    padding: 5px 0;
-}
-
-.check li {
-    margin: 30px 0;
-}
-
-.check li a{
-    padding: 1px 4px;
-    background-color: var(--green);
-} */
 
 .contact-section .container {
     display: flex;
@@ -595,6 +596,7 @@ form button[type="submit"] {
     margin-left: 30px;
     font-size: 13px;
     font-family: Open Sans;
+    border: 0;
 }
 
 .checkbox label input {
@@ -660,3 +662,4 @@ form button[type="submit"] {
   .social {
       margin-top: 20px;
   }
+  
