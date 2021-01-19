@@ -380,7 +380,7 @@ nav label::after {
 
 .banner-title {
   font-family: Raleway;
-  font-size: 3em;
+  font-size: 3rem;
   color: #000000;
   padding: 1.25rem;
   text-align: center;
@@ -789,7 +789,7 @@ nav label::after {
   font-family: Raleway;
   color: #000000;
   margin-bottom: 40px;
-  margin-top: 0 1.85rem;
+  margin-top: 1.85rem;
 }
 
 .pricing-section .container {
@@ -944,16 +944,19 @@ nav label::after {
 .contact-section .container {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+  height: 600px;
   padding: 2.5rem 0;
 }
 
 .questions {
   max-width: 50%;
   padding: 0 6.25rem;
+  margin-top: 2rem;
 }
 
 .questions-title {
-  font-size: 3em;
+  font-size: 3rem;
   font-family: Raleway;
   color: #000000;
   margin: 1.25rem 0;
@@ -986,7 +989,6 @@ nav label::after {
 
 .contact-form {
   max-width: 50%;
-  margin-top: 5rem;
 }
 
 .contact-form input {
@@ -1129,6 +1131,10 @@ form button[type=submit] {
   }
 }
 @media (max-width: 500px) {
+  .contact-section {
+    height: 650px;
+  }
+
   .questions-text {
     margin: 1.87rem 0.25rem;
   }
@@ -1177,5 +1183,241 @@ footer .container {
 
 .social {
   margin-top: 20px;
+}
+
+.calculator-section {
+  background-color: #F7F7F7;
+}
+
+.calc-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-family: Raleway;
+  color: #000000;
+}
+
+.calculate {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: auto;
+}
+
+.choose-package {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+}
+
+form {
+  max-height: 190px;
+}
+
+#quantity {
+  width: 40vw;
+  border: 2px solid #08A6E4;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #A5A5A5;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+}
+
+#months {
+  width: 40vw;
+  border: 2px solid #08A6E4;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #A5A5A5;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+}
+
+.package-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-package-dropdown {
+  width: 40vw;
+  height: 40px;
+  border: 2px solid #08A6E4;
+  background-color: white;
+  float: left;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #757575;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("../../assets/ArrowDown.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+}
+
+.choose-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  display: none;
+  transition: 0.2s 1s;
+}
+
+.choose-option div {
+  width: 40vw;
+  height: 40px;
+  background-color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #757575;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.choose-option div:hover {
+  border: 1px solid #08A6E4;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.checkboxes label input {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0;
+  border: 2px solid black;
+  margin-top: 1.25rem;
+}
+
+.checkboxes input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkboxes input:checked + span {
+  background: transparent url("../assets/Checkmark.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.checkboxes .custom {
+  position: absolute;
+  top: -10px;
+  left: -235px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #A5A5A5;
+  margin-top: 1.25rem;
+  margin-bottom: 100px;
+  border-radius: 4px;
+}
+
+#check2 .custom {
+  margin-top: 50px;
+}
+
+.checkboxes:hover input ~ .custom {
+  border: 1px solid #08A6E4;
+}
+
+.accounting-name, .consent-name {
+  position: absolute;
+  margin-bottom: 20px;
+  top: 0;
+  left: -185px;
+  color: #757575;
+  font-size: 2rem;
+}
+
+.consent-name {
+  margin-top: 35px;
+}
+
+.checkboxes input:checked + span {
+  background: transparent url("../assets/Checkmark.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.output {
+  margin-top: 100px;
+}
+
+.product-price, .product-orders, .product-package, .accounting, .terminal {
+  width: 40vw;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #55DFB4;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 2rem;
+}
+
+.product-price span, .product-orders span, .product-package span, .accounting span, .terminal span {
+  margin: 0 5px;
+}
+
+.total {
+  width: 20vw;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0;
+  color: white;
+  font-size: 2rem;
+  background: #08A6E4;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .calc-title {
+    margin-left: 10%;
+  }
+
+  .choose-package {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .checkboxes .custom {
+    left: -130px;
+  }
+
+  .accounting-name, .consent-name {
+    left: -90px;
+  }
+
+  #quantity, #months, .choose-package-dropdown, .product-price, .product-orders, .product-package, .accounting, .terminal, .choose-option div {
+    width: 70vw;
+  }
+
+  .total {
+    width: 35vw;
+  }
+
+  #months, #quantity {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -157,6 +157,83 @@
                     </article>
                 </div>
           </div>
+
+          <div class="calculator-section">
+                <div class="container">
+                    <div class="calc-title">Calculate how much you'll pay</div>
+                    <div class="calculate">
+                        <div class="choose-package">
+                            <form>
+                                <div class="quantity">
+                                    <label for="quantity"></label>
+                                    <input type="number" name="quantity" id="quantity" placeholder="Product Quantity">
+                                </div>
+                                <div class="months">
+                                    <label for="months"></label>
+                                    <input type="number" name="months" id="months" placeholder="Months">
+                                </div>
+                                <div class="package-option">
+                                    <button class="choose-package-dropdown">Choose package</button>
+                                    <div class="choose-option">
+                                        <div data-id="option" class="basic">Basic</div>
+                                        <div data-id="option" class="proffesional">Professional</div>
+                                        <div data-id="option" class="premium">Premium</div>
+                                    </div>
+                                </div>
+                                <div class="checkboxes">
+                                    <p>
+                                      <label for="accounting">
+                                      <input name="consent" id="accounting" type="checkbox" checked>
+                                      <span class="custom"></span>
+                                      </label>
+                                      <span class="accounting-name">Accounting
+                                      </span>
+                                    </p>
+                                </div>
+                                <div class="checkboxes" id="check2">
+                                    <p>
+                                      <label for="terminal">
+                                      <input name="consent" id="terminal" type="checkbox" checked>
+                                      <span class="custom"></span>
+                                      </label>
+                                      <span class="consent-name">Terminal
+                                      </span>
+                                    </p>
+                                </div>
+                            </form>
+                            <div class="output">
+                                <div class="product-price">
+                                    <span class="name">Product</span>
+                                    <span class="calc"></span>
+                                    <span class="sum">$0</span>
+                                </div>
+                                <div class="product-orders">
+                                    <span class="name">Orders</span>
+                                    <span class="calc"></span>
+                                    <span class="sum">$0</span>
+                                </div>
+                                <div class="product-package">
+                                    <span class="name">Package</span>
+                                    <span class="calc"></span>
+                                    <span class="sum">$0</span>
+                                </div>
+                                <div class="accounting">
+                                    <span class="name">Accounting</span>
+                                    <span class="sum">$45</span>
+                                </div>
+                                <div class="terminal">
+                                    <span class="name">Terminal</span>
+                                    <span class="sum">$20</span>
+                                </div>
+                                <div class="total">
+                                    <span class="name">Total</span>
+                                    <span class="total-price">$0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
           
           <div class="contact-section">
               <div class="container" class="contact">
@@ -198,7 +275,6 @@
                                   <span class="agreement">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                                   </span>
                                 </p>
-                            <!-- <button type="submit">Send</button> -->
                             </div>
                             <button type="submit">Send</button>
                         </form>
@@ -222,6 +298,6 @@
                 </div>
           </div>
       </footer>
-
+      <script src="jsfiles/calculator.js"></script>
 </body>
 </html>

@@ -1,12 +1,15 @@
 .contact-section .container {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    height: 600px;
     padding: $default-padding;
 }
 
 .questions {
     max-width: 50%;
     padding: $questions-padding;
+    margin-top: 2rem;
 }
 
 .questions-title {
@@ -42,7 +45,6 @@
 
 .contact-form {
     max-width: 50%;
-    margin-top: $big-margin;
 }
 
 .contact-form input  {
@@ -176,6 +178,9 @@ form button[type="submit"] {
   }
 
   @media(max-width: 500px) {
+    .contact-section {
+        height: 650px;
+    }
     .questions-text {
         margin: 1.87rem 0.25rem;
     }
